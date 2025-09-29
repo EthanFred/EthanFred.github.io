@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.join-container { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "Discord Instagram Github"
+    "feedback feedback feedback"
+    ;
+    height: 500px;
+}
+
+
+
+.join-card { 
+    text-align: center;
+    height: 200px; 
+    width: 100%;
+    border: 2px solid black;
+    background-color: #A4BAB7;
+    
+}
+
+.feedback-card {
+    text-align: center;
+    height: 200px; 
+    width: 100%;
+    background-color: #BEA57D;
+    grid-column: span 3;
+}
+
+
+.feedback-message{
+    display: none;
+}
+
+.join-card:hover {
+    background-color: #A52422;
+}
+
+
+
+.jams-container { 
+    display: grid; 
+    grid-template-columns: repeat(3, f1);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Game1Week1 Game2Week1 Game3Week1"
+    "Game1Week2 Game1Week2 Game2Week2"
+    "Game1Week3 Game2Week3 Game3Week3"
+    "InfoWeek InfoWeek InfoWeek"
+    ;
+    height: 700px;
+}
+
+
+
+.jams-card { 
+    height: 200px; 
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+}
+
+.jams-card-long{ 
+    height: 200px; 
+    justify-self: center;
+    align-self: center;
+    grid-column: span 2;
+    width: 100%;
+}
+
+.jams-info{
+    height: 200px; 
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    grid-column: span 3;
+    text-align: center;
+    font-size: 40pt;
+    white-space: pre-line;
+    background-color: #BEA57D;
+}
+
+.week1{
+    background-color: #A4BAB7;
+}
+.week2{
+    background-color: #A4BAB7;
+}
+.week3{
+    background-color: #A4BAB7;
+}
+
+.week1:hover{
+    background-color: #A52422;
+}
+
+.week2:hover{
+    background-color: #A52422;
+}
+
+.week3:hover{
+    background-color: #A52422;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1em;
+    background-color: teal;
+}
+
+.hamburger{
+    display: none;
+    background-color: white;
+}
+
+.hamburger:hover{
+    background-color: beige;
+}
+
+.hamburger:active{
+    background-color: blue;
+}
+
+.span-bar{
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1em;
+    gap: 5vw;
+    background-color: teal;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-menu{
+        display: none;
+    }
+    
+    .nav-menu.show{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+    }
+}
