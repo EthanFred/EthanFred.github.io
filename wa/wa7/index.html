@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design Club Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+  <nav class="main-nav" aria-label="main navigation">
+    <div class="nav-brand">Game Design Hub</div>
+    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class = "span-bar"></span>
+      <span class = "span-bar"></span>
+      <span class = "span-bar"></span>
+    </button>
+    <ul class="nav-menu">
+      <li ><a href="index.html">Join Us</a></li>
+      <li ><a href="#resources">Game Design Resources</a></li>
+      <li ><a href="#events">Events</a></li>
+      <li ><a href="jams.html">Past Game Jams</a></li>
+    </ul>
+  </nav>
+
+
+  
+
+  <main class="join-container">
+    <div class="join-card discord">Discord</div>
+    <div class="join-card instagram">Instagram</div>
+    <div class="join-card github">Github</div>
+    
+    <!-- Set user info -->
+    <div class = "join-card setuser">
+      <label>Username:</label>
+      <input type="text" id = "ls-username" placeholder = "Username" value = "Username"> </input>
+      <label>Feedback:</label>
+      <input type="text" id = "ls-text" placeholder = "Feedback" value = "Feedback"> </input>
+    </div>
+
+    <div class= "join-card localstorage">
+      <button class="btn btn-primary" onclick="setLocalStorage()">Save to localStorage</button>
+      <button class="btn btn-danger" onclick="clearLocalStorage()">Clear localStorage</button>
+      <button id="theme" class="btn btn-primary" type="button">Change Theme</button>
+    </div>
+    
+    <!-- Show user info -->
+    <div id="output-info" class = "join-card display">
+      <p> Nothing to Display </p>
+    </div>
+    
+
+  </main>
+
+  <footer class = "footer">
+    <h1> Privacy Statement: </h1>
+    <p> Data collected includes the username and feedback submitted, as well as the theme, if changed.</p>
+    <p> We collect this data to help improve our site for our fellow game developers as well as your customization! </p>
+    <p> Data is permanently stored on your local computer until you clear it! </p>
+    <p>You may clear this data at any time, it will be displayed on the home screen.</p>
+    <p> We never fetch external data!</p>
+
+  </footer>
+
+      
+
+  
+</body>
+</html>
