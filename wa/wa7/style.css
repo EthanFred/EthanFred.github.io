@@ -86,6 +86,14 @@
     background: #703d3d;
 }
 
+.outer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    border: 2px dashed blue;
+    container-type: inline-size;
+    container-name: join-container;
+}
 
 .join-container { 
     display: grid; 
@@ -95,7 +103,55 @@
     "discord instagram github"
     "setuser localstorage display"
     ;
-    height: 500px;
+
+}
+
+
+@container join-container (max-width: 760px)
+{
+    .join-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "discord instagram" 
+    "github setuser" 
+    "localstorage display"
+    ;
+    }
+}
+
+@container join-container (max-width: 480px)
+{
+    .join-container
+    {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "discord" 
+        "instagram" 
+        "github"
+        "setuser" 
+        "localstorage" 
+        "display"
+        ;
+    }
+}
+
+
+
+@container join-container (max-width: 1020px)
+{
+    .join-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "discord instagram github" 
+    "setuser localstorage display"
+    ;
+    }
 }
 
 

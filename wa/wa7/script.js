@@ -88,18 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    feedback.addEventListener('submit', (event) => {
-
-        event.preventDefault(); 
-        
-        const input = document.getElementById('feedback-input').value;
-      
-      
-        message.textContent = "Feedback submitted successfully!";
-        message.style.display = 'block';
-    });
-
-
 
     
 
