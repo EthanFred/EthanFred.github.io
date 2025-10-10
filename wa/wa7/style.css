@@ -107,7 +107,7 @@
 }
 
 
-@container join-container (max-width: 760px)
+@media(max-width: 760px)
 {
     .join-container{
     display: grid; 
@@ -121,7 +121,7 @@
     }
 }
 
-@container join-container (max-width: 480px)
+@media (max-width: 480px)
 {
     .join-container
     {
@@ -141,7 +141,7 @@
 
 
 
-@container join-container (max-width: 1020px)
+@media (max-width: 1020px)
 {
     .join-container{
     display: grid; 
