@@ -3,7 +3,9 @@
     margin: 0;
 }
 
-
+html, body {
+  overflow-y: scroll;
+}
 
 a:hover{
     color: white;

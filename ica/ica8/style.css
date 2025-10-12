@@ -86,15 +86,6 @@
     background: #703d3d;
 }
 
-.outer {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    border: 2px dashed blue;
-    container-type: inline-size;
-    container-name: join-container;
-}
-
 .join-container { 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
@@ -103,61 +94,11 @@
     "discord instagram github"
     "setuser localstorage display"
     ;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 
 }
-
-
-@media (max-width: 480px)
-{
-    .join-container
-    {
-        display: grid; 
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
-        grid-template-areas: 
-        "discord" 
-        "instagram" 
-        "github"
-        "setuser" 
-        "localstorage" 
-        "display"
-        ;
-    }
-}
-
-
-@media(max-width: 760px)
-{
-    .join-container{
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
-    "discord instagram" 
-    "github setuser" 
-    "localstorage display"
-    ;
-    }
-}
-
-
-
-
-
-@media (max-width: 1020px)
-{
-    .join-container{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: 
-    "discord instagram github" 
-    "setuser localstorage display"
-    ;
-    }
-}
-
-
 
 .light .join-card { 
     text-align: center;
@@ -399,37 +340,6 @@
     background-color: rgb(0, 32, 32);
 }
 
-
-
-@media (max-width: 768px) {
-    .hamburger{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
-        width: 40px;
-        height: 40px;
-    }
-    
-    .nav-menu{
-        display: none;
-    }
-    
-    .nav-menu.show{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 768px) {
-    .hamburger{
-        display: none;
-    }
-    .nav-menu{
-        display: flex;
-    }
-}
-
 .light h1{
     color: rgb(39, 39, 39);
 }
@@ -456,4 +366,70 @@
     justify-content: center;
     align-items: center;
     gap: .5rem;
+}
+
+@media (max-width: 1028px)
+{
+    .join-container{ 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "discord instagram github" 
+    "setuser localstorage display"
+    ;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+    }
+}
+
+@media(max-width: 760px)
+{
+    .join-container{ 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "discord instagram" 
+    "github setuser" 
+    "localstorage display"
+    ;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-menu{
+        display: none;
+    }
+    
+    .nav-menu.show{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 480px)
+{
+    .join-container
+    { 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "discord" 
+        "instagram" 
+        "github"
+        "setuser" 
+        "localstorage" 
+        "display"
+        ;
+    }
 }
