@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.discord     { grid-area: discord; }
+.instagram   { grid-area: instagram; }
+.github      { grid-area: github; }
+
+
+
+.setuser     { 
+    grid-area: setuser; 
+    width: 80%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ls-username {
+    width: 80%;
+}
+#ls-text {
+    width: 80%;
+}
+
+.localstorage   { 
+    grid-area: localstorage; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.display { 
+    grid-area: display; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+    transition: all 0.3s;
+}
+
+.light .btn-primary {
+    background: #1976d2;
+    color: white;
+}
+
+.light .btn-primary:hover {
+    background: #1565c0;
+}
+
+.light .btn-danger {
+    background: #f44336;
+    color: white;
+}
+
+.light .btn-danger:hover {
+    background: #d32f2f;
+}
+
+.dark .btn-primary {
+    background: #0d4175;
+    color: white;
+}
+
+.dark .btn-primary:hover {
+    background: #385f86;
+}
+
+.dark .btn-danger {
+    background: #661c17;
+    color: white;
+}
+
+.dark .btn-danger:hover {
+    background: #703d3d;
+}
+
+.outer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    border: 2px dashed blue;
+    container-type: inline-size;
+    container-name: join-container;
+}
+
+.join-container { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "discord instagram github"
+    "setuser localstorage display"
+    ;
+
+}
+
+
+@media(max-width: 760px)
+{
+    .join-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "discord instagram" 
+    "github setuser" 
+    "localstorage display"
+    ;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .join-container
+    {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "discord" 
+        "instagram" 
+        "github"
+        "setuser" 
+        "localstorage" 
+        "display"
+        ;
+    }
+}
+
+
+
+@media (max-width: 1020px)
+{
+    .join-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "discord instagram github" 
+    "setuser localstorage display"
+    ;
+    }
+}
+
+
+
+.light .join-card { 
+    text-align: center;
+    height: 200px; 
+    width: 100%;
+    border: 2px solid black;
+    background-color: #A4BAB7;
+    
+}
+.dark .join-card { 
+    text-align: center;
+    color: white;
+    height: 200px; 
+    width: 100%;
+    border: 2px solid black;
+    background-color: #1a1d1c;
+    
+}
+
+.light .feedback-card {
+    text-align: center;
+    height: 200px; 
+    width: 100%;
+    background-color: #BEA57D;
+    grid-column: span 3;
+}
+.dark .feedback-card {
+    text-align: center;
+    color: white;
+    height: 200px; 
+    width: 100%;
+    background-color: #30291f;
+    grid-column: span 3;
+}
+
+
+.feedback-message{
+    display: none;
+}
+
+.light .join-card:hover {
+    background-color: #A52422;
+}
+.dark .join-card:hover {
+    background-color: #380c0c;
+}
+
+
+
+.jams-container { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Game1Week1 Game2Week1 Game3Week1"
+    "Game1Week2 Game1Week2 Game2Week2"
+    "Game1Week3 Game2Week3 Game3Week3"
+    "InfoWeek InfoWeek InfoWeek"
+    ;
+    height: 700px;
+}
+
+
+
+.jams-card { 
+    height: 200px; 
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+}
+
+.jams-card-long{ 
+    height: 200px; 
+    justify-self: center;
+    align-self: center;
+    grid-column: span 2;
+    width: 100%;
+}
+
+.light .jams-info{
+    height: 200px; 
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    grid-column: span 3;
+    text-align: center;
+    font-size: 40pt;
+    white-space: pre-line;
+    background-color: #BEA57D;
+}
+.dark .jams-info{
+    height: 200px; 
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    grid-column: span 3;
+    text-align: center;
+    font-size: 40pt;
+    color: white;
+    white-space: pre-line;
+    background-color: #30291f;
+}
+
+.light .week1{
+    background-color: #A4BAB7;
+}
+
+.light .week2{
+    background-color: #A4BAB7;
+}
+.light .week3{
+    background-color: #A4BAB7;
+}
+
+.light .week1:hover{
+    background-color: #A52422;
+}
+
+.light .week2:hover{
+    background-color: #A52422;
+}
+
+.light .week3:hover{
+    background-color: #A52422;
+}
+
+.light a:hover{
+    color: rgb(0, 0, 44);
+    text-decoration: none;
+}
+
+
+.dark .week1{
+    background-color: #232726;
+    color: white;
+}
+
+.dark .week2{
+    background-color: #232726;
+    color: white;
+}
+.dark .week3{
+    background-color: #232726;
+    color: white;
+}
+
+.dark .week1:hover{
+    background-color: #350b0a;
+}
+
+.dark .week2:hover{
+    background-color: #350b0a;
+}
+
+.dark .week3:hover{
+    background-color: #350b0a;
+}
+
+.dark a{
+    color:rgb(150, 150, 247)
+}
+.dark a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.light .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1em;
+    background-color: teal;
+}
+
+.light .hamburger{
+    display: none;
+    background-color: white;
+}
+
+.light .hamburger:hover{
+    background-color: beige;
+}
+
+.light .hamburger:active{
+    background-color: blue;
+}
+
+.light .span-bar{
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+.light .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1em;
+    gap: 5vw;
+    background-color: teal;
+}
+
+.dark .nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1em;
+    background-color: rgb(0, 39, 39);
+}
+
+.dark .hamburger{
+    display: none;
+    background-color: black;
+}
+
+.dark .hamburger:hover{
+    background-color: rgb(32, 32, 28);
+}
+
+.dark .hamburger:active{
+    background-color: rgb(0, 0, 43);
+}
+
+.dark .span-bar{
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+.dark .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1em;
+    gap: 5vw;
+    background-color: rgb(0, 32, 32);
+}
+
+
+
+@media (max-width: 768px) {
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-menu{
+        display: none;
+    }
+    
+    .nav-menu.show{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+    }
+}
+
+.light h1{
+    color: rgb(39, 39, 39);
+}
+.light p{
+    color: rgb(39, 39, 39);
+}
+.dark h1{
+    color: rgb(221, 221, 221);
+}
+.dark p{
+    color: rgb(221, 221, 221);
+}
+
+.light {
+    background-color: antiquewhite;
+}
+.dark {
+    background-color: black;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
