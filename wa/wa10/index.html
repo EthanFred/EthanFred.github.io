@@ -10,17 +10,37 @@
 
 </head>
 <body>
-    <div class="app">
-        <header>News Generator</header>
-        <section class="news">
-          <div class="news-box" id="js-news-box"></div>
-        </section>
-        <section class="controls" >
-          <button type="button" id="js-new-quote" class="new-quote button">
-            Show me a News Article!
-          </button>
-        </section>
+    <div class="outerapp">
+      <div class="app">
+          <header>News Generator</header>
+          <section class="news">
+            <div class="news-box" id="js-news-box"></div>
+          </section>
+          <section class="controls" >
+            <button type="button" id="js-new-quote" class="new-quote button">
+              Show me a News Article!
+            </button>
+          </section>
       </div>
+    </div>
+
+      <h1> Extension </h1>
+      <p> For this project, I used NewsData.io as the API and for the extension from the in class assignment. </p>
+      <p> I used an API key with Node JS to hide it in the backend. </p>
+      <p> To run this webpage, in the terminal inside the wa10 folder, you have to run: </p>
+      <p> npm install </p>
+      <p> node backend.js </p>
+      <p> This starts the server and will allow you to move cycle the different news articles</p>
+      <h1> Implemtation </h1>
+      <p> 
+        For my systems critique project, I want to use this API to go through recipes and return results 
+        that are biased towards a more positive rating. This API allows for such. I would also show the image 
+        and more infomration for the user using Grid in css, so it is easy to go through these different articles.
+        One thing I have to note is that I have to pay to find random articles, so I can only search for the latest 
+        articles, and could not randomly find an article in the archive. If I were to fully implement it, I would make 
+        some randomization so it is not just the most recent articles. 
+      </p>
+
       <script src="frontend.js"></script>
 </body>
 </html>
