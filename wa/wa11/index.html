@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="outerapp">
+      <div class="app">
+          <header>News Generator</header>
+          <section class="news">
+            <div class="news-box" id="js-news-box1">
+              <div class = "title" id ="news-title1" ></div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton1"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton1"> Remove </button> 
+              </div>
+            </div>
+
+            <div class="news-box" id="js-news-box2">
+              <div class = "title" id ="news-title2" ></div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton2"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton2"> Remove </button> 
+              </div>
+            </div>
+            <div class="news-box" id="js-news-box3">
+              <div class = "title" id ="news-title3" ></div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton3"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton3"> Remove </button> 
+              </div>
+            </div>
+            <div class="news-box" id="js-news-box4">
+              <div class = "title" id ="news-title4" ></div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton4"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton4"> Remove </button> 
+              </div>
+            </div>
+            <div class="news-box" id="js-news-box5">
+              <div class = "title" id ="news-title5" ></div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton5"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton5"> Remove </button> 
+              </div>
+            </div>
+            <div class="news-box" id="js-news-box6">
+              <div class = "title" id ="news-title6" > Content </div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton6"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton6"> Remove </button> 
+              </div>
+            </div>
+            <div class="news-box" id="js-news-box7">
+              <div class = "title" id ="news-title7" ></div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton7"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton7"> Remove </button> 
+              </div>
+             </div>
+            <div class="news-box" id="js-news-box8">
+              <div class = "title" id ="news-title8" ></div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton8"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton8"> Remove </button> 
+              </div>
+
+            </div>
+            <div class="news-box" id="js-news-box9">
+              <div class = "title" id ="news-title9" ></div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton9"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton9"> Remove </button> 
+              </div>
+
+            </div>
+            <div class="news-box" id="js-news-box10">
+              <div class = "title" id ="news-title10" > hi</div>
+              <div class = "favorite" >
+                <button type="button" class = "favoritebutton" id = "favoritebutton10"> Favorite </button> 
+              </div>
+              <div class = "remove">
+                <button type="button" class = "removebutton" id = "removebutton10"> Remove </button> 
+              </div>
+
+            </div>
+          </section>
+          <section class="controls" >
+            <button type="button" id="js-new-quote" class="new-quote button">
+              Show me a News Article!
+            </button>
+          </section>
+          <header> Favorites </header>
+          <section class = "displayFavorites" id="output-info">
+
+          </section>
+          <button class="btn btn-danger" onclick="clearLocalStorage()">Clear localStorage</button>
+      </div>
+    </div>
+
+      <h1> Extension </h1>
+      <p> For this project, I used NewsData.io as the API and for the extension from the in class assignment. </p>
+      <p> I used an API key with Node JS to hide it in the backend. </p>
+      <p> To run this webpage, in the terminal inside the wa10 folder, you have to run: </p>
+      <p> npm install </p>
+      <p> node backend.js </p>
+      <p> This starts the server and will allow you to move cycle the different news articles</p>
+      <h1> Implemtation </h1>
+      <p> 
+        For my systems critique project, I want to use this API to go through recipes and return results 
+        that are biased towards a more positive rating. This API allows for such. I would also show the image 
+        and more infomration for the user using Grid in css, so it is easy to go through these different articles.
+        One thing I have to note is that I have to pay to find random articles, so I can only search for the latest 
+        articles, and could not randomly find an article in the archive. If I were to fully implement it, I would make 
+        some randomization so it is not just the most recent articles. 
+      </p>
+
+      <script src="frontend.js"></script>
+</body>
+</html>
