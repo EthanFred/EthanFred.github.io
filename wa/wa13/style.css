@@ -1,0 +1,219 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #184f37;
+  }
+  
+  .outerapp {
+    display: flex;
+    justify-content: center;
+  }
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    background-color: rgb(44, 58, 73);
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  
+  header {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #954040;
+    font-weight: bold;
+    color: white;
+  }
+
+  .news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .news-box {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "favorite remove"
+    "photo photo";
+    gap: 20px;
+    height: 500px;
+    padding: 20px 50px;
+    min-height: 200px;
+    border: 2px solid black;
+    align-self: center;
+  }
+
+  
+
+  .title{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(198, 164, 164);
+    grid-column: span 2;
+  }
+
+  .title:focus{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(198, 164, 164);
+    grid-column: span 2;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: rgb(198, 164, 164);
+  }
+
+  
+  .quote-text {
+    padding-bottom: 20px;
+    
+  }
+
+  .displayFavorites{
+    color: rgb(145, 235, 145)
+  }
+
+  .btn-danger {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+    background: #611914;
+    color: white;
+}
+  
+  .controls {
+    width: 100%;
+    padding: 20px 50px;
+  }
+  
+  #js-new-quote {
+    display: block;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+
+  .favoritebutton{
+    display: block;
+    font-weight: bold;
+    background-color: rgb(174, 174, 248);
+    border-radius: 4px;
+    border: none;
+    padding: 40px 40px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+
+
+  .removebutton{
+    display: block;
+    font-weight: bold;
+    background-color: rgb(246, 173, 173);
+    border-radius: 4px;
+    border: none;
+    padding: 40px 40px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+
+  
+  .new-quote {
+    background-color: #fa61d9;
+    margin-bottom: 15px;
+  }
+  
+  .new-quote:hover {
+    background-color: #f67cd4;
+  }
+  
+  .new-quote:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .app {
+      width: 100%;
+    }
+    .quote-text {
+      font-size: 18px;
+    }
+  }
+
+  h1{
+    color: rgb(255, 239, 239);
+    text-align: center;
+  }
+  p{
+    color: rgb(255, 239, 239);
+    text-align:center;
+  }
+
+  @media (min-width: 768px) {
+    .news-box{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "title title"
+      "favorite remove"
+      "photo photo";
+    }
+    .title{
+    grid-column: span 2;
+    }
+    .photo{
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+    .news-box{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      "title"
+      "favorite" 
+      "remove"
+      "photo";
+    }
+    .title{
+    grid-column: span 1;
+    }
+    .photo{
+    grid-column: span 1;
+  }
+}
