@@ -28,19 +28,32 @@
             background-color: #FFA400;
             border: .25rem solid #B02E0C;
             width: 90%;
+            height: 10%;
             display: flex;
             justify-content: center;
+            align-items: center;
+            grid-column: 1 / 3;
+        }
+
+        .about-me{
+            
         }
 
         .blackBack{
             background-color: #232528;
             display: grid; 
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            gap: 20px 20px;
+        }
+
+        #index-page{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
             grid-template-areas: 
-            "discord instagram github"
-            "setuser localstorage display"
-    ;
+            "whiteback whiteback"
+            "about-me about-me"
+            "interests interests"
+            "academic-goals fun-goals"
         }
 
         p {
