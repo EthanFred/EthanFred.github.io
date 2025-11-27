@@ -1,0 +1,112 @@
+
+        .rosarivo-regular {
+            font-family: "Rosarivo", cursive;
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+        .lexend-deca-Lexend {
+            font-family: "Lexend Deca", sans-serif;
+            /* font-optical-sizing: auto; */
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        .color-box {
+            height: 200px;
+            width: 200px;
+        }
+
+        .whiteBack {
+            background-color: #FFA400;
+            border: .25rem solid #B02E0C;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blackBack{
+            background-color: #232528;
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "discord instagram github"
+            "setuser localstorage display"
+    ;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: "Rosarivo";
+            color: #E8E3E8
+        }
+
+        .text-black {
+            font-size: 16px;
+            font-family: "Rosarivo";
+            color: #232528
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: "Lexend Deca";
+            color: #E8E3E8
+        }
+
+        .h2-footer{
+            font-size: 24px;
+            font-family: "Lexend Deca";
+            color: #B02E0C
+        }
+
+        h2 {
+            font-size: 24px;
+            font-family: "Lexend Deca";
+            color: #009FFD
+        }
+
+        h1 {
+            font-size: 28px;
+            font-family: "Lexend Deca";
+            color: #FFA400
+        }
+
+        a {
+            font-family: "Rosarivo";
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            font-family: "Rosarivo";
+            text-decoration: underline;
+            color: #B02E0C;
+        }
+
+        a:visited {
+            font-family: "Rosarivo";
+            color:black;
+        }
+
+
+        .nav-bar{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 100px;
+        }
+
+        .nav-button{
+            width: 130px;
+            height: 30px;
+            background-color: #009FFD;
+            color: white;
+        }
