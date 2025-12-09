@@ -13,36 +13,38 @@
 </head>
 <body class = "blackBack">
     <header class = "whiteBack">
-        <nav>
-            <ul>
-                <li>
-                    <button> <a href = index.html> Home </a> </button> 
-                </li>
-                <li> <p class = "text-black"> Films </p></li>
-                <li><a href = games.html> Games </a></li>
-                <li><a href = writing.html> Screenwriting </a></li>
-            </ul>
-        </nav>
-        
+        <div class = "nav-bar"> 
+            <div class="home-nav">
+                <button class = "nav-button"> <a href = index.html> Home </a> </button> 
+            </div>
+            <div class = "films-nav">
+                <button class = "nav-button"> <a href = films.html> Films </a> </button>
+            </div>
+            <div class = "games-nav">
+                <button class = "nav-button"> <a href = games.html> Games </a> </button>
+            </div>
+        </div>
     </header>
-    <main>
-        <h1> Films </h1>
-        <h2> Past Projects </h2>
-        <ul>
-            <li>
-                <h3> Family Therapy</h3>
-                <p> A documentary about my relationship with my family as my brother went through a severe depression.</p> 
-            </li>
-            <li>
-                <h3> Zoey </h3>
-                <p> A film I made about my dog who was diagnosed with cancer. It was about living in the moment, appreciating it, and dealing with loss.</p> 
-                <p> this film uses the strong juxtaposition of sound and image to provide a jarring and uncomfortable experience. </p>
-            </li>
-            <li>
-                <h3>  Im Still Here</h3>
-                <p> In this narrative film, a man dies and must deal with his mortality in his final moments.</p> 
-            </li>
-        </ul>
+    <main id = "films-page">
+        <div class="film-header"><h1> Films </h1> </div>
+        <div class="film-title">
+
+            <h3> Family Therapy</h3>
+            <p> A documentary about my relationship with my family as my brother went through a severe depression.</p> 
+
+            <h3> Zoey </h3>
+            <p> A film I made about my dog who was diagnosed with cancer. It was about living in the moment, appreciating it, and dealing with loss.</p> 
+            <p> this film uses the strong juxtaposition of sound and image to provide a jarring and uncomfortable experience. </p>
+
+            <h3>  Im Still Here</h3>
+            <p> In this narrative film, a man dies and must deal with his mortality in his final moments.</p> 
+        </div>
+        <div class = "film-image">
+            <img src = "img/FamilyTherapy.png" alt = "Family Therapy" height = 200> 
+            <img src = "img/Zoey.png" alt = "Zoey" height = 200> 
+            <img src = "img/ImStillHere.png" alt = "Im Still Here" height = 200> 
+        </div>
+
     </main>
     <footer class = "whiteBack">
         <h2 class = "h2-footer"> Contact: </h2>

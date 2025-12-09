@@ -13,56 +13,58 @@
 </head>
 <body class = "blackBack">
     <header class = "whiteBack">
-        <nav>
-            <ul>
-                <li><a href = index.html> Home </a></li>
-                <li><a href = films.html> Films </a></li>
-                <li> <p class = "text-black"> Games </p></li>
-                <li><a href = writing.html> Screenwriting </a></li>
-            </ul>
-        </nav>
+        <div class = "nav-bar"> 
+            <div class="home-nav">
+                <button class = "nav-button"> <a href = index.html> Home </a> </button> 
+            </div>
+            <div class = "films-nav">
+                <button class = "nav-button"> <a href = films.html> Films </a> </button>
+            </div>
+            <div class = "games-nav">
+                <button class = "nav-button"> <a href = games.html> Games </a> </button>
+            </div>
+        </div>
+
         
     </header>
-    <main>
-        <h1> Games </h1>
-        <section>
-            <h2> Game Engines </h2>
-            <ul>
-                <li>
-                    <h3> Unreal Engine</h3>
-                    <p> I have a lot of experience messing with nanite technology and the realism that Unreal Engine 5 offers</p> 
-                </li>
-                <li>
-                    <h3> Unity </h3>
-                    <p> I love Unity for its accessibility and how it integrates mechanics into the engine</p> 
-                </li>
-                <li>
-                    <h3> Godot </h3>
-                    <p> Im currently learning Godot and have so far loved its format!</p> 
-                </li>
-            </ul>
+    <main id="games-page">
+        <div class = "games-page-header">
+            <h1> Games </h1>
+        </div>
+        <section class = game-engines>
+            <div class = "game-engine-header">
+                <h2> Game Engines </h2>
+            <div class = "unreal-engine">
+                <h3> Unreal Engine</h3>
+                <p> I have a lot of experience messing with nanite technology and the realism that Unreal Engine 5 offers</p> 
+            </div>
+            <div class = "Unity">
+                <h3> Unity </h3>
+                <p> I love Unity for its accessibility and how it integrates mechanics into the engine</p> 
+            </div>
+            <div class = "Godot">
+                <h3> Godot </h3>
+                <p> Im currently learning Godot and have so far loved its format!</p> 
+            </div>
         </section>
-        <section>
-            <h2> Past Projects </h2>
-            <ul>
-                <li> 
-                    <h3> Lazer map </h3>
-                    <p> I created a realistic "temple explorer" in which the player bounces lazers across an Unreal Engine environment</p>
-                </li>
-                <li>
-                    <h3> Mafia </h3>
-                    <p> I created a game similar to Mafia in which the player moves around the environment and tries to talk to NPCs and get on their goodside, otherwise they will be killed. </p>
-                </li>
-            </ul>
+        <section class = "games-past-projects">
+            <div class = "game-past-projects-header">
+                <h2> Past Projects </h2>
+            </div>
+            <div class = "Europa">
+                <h3> Europa </h3>
+                <p> I created a realistic "temple explorer" in which the player bounces lazers across an Unreal Engine environment</p>
+            </div>
+            <div class = "Mafia">
+                <h3> Mafia </h3>
+                <p> I created a game similar to Mafia in which the player moves around the environment and tries to talk to NPCs and get on their goodside, otherwise they will be killed. </p>
+            </div>
         </section>
-        <article>
-            <h2> Aside: Card Games! </h2>
-        <aside>
+        <section class = "games-card-games">
             <h2> How to Commit a Murder Card Came </h2>
-            <p> I have also spent time building a witty card game in which you try to get away with murder!
-        </aside>
-        </article>
-        <section>
+            <p> I have also spent time building a witty card game in which you try to get away with murder!</p>
+        </section>
+        <section class = "games-current-project">
             <h2> Current Project </h2>
             <p> I am currently working on a game in which you interact with 10 npcs, every night a person is selected to kill another. Its a game that requires a lot of choice!
         </section>
